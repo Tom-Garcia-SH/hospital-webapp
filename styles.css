@@ -1,0 +1,157 @@
+/* Programmer ID: 87
+ This file contains styles applied to the entire site */
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global font-family */
+body {
+    font-family: Arial, sans-serif; /* A clean, sans-serif font */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif; /* Slightly more modern font for headers */
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Container for buttons on the home page */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Button styles for forms */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Control section for form inputs */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Table container for responsiveness */
+.table-container {
+    overflow-x: auto;
+}
+
+/* General styling for forms */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-bottom: 10px;
+}
+
+/* Form select and input styling */
+select, input[type="radio"], input[type="checkbox"], button {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; /* Adjust as needed for spacing around the header */
+    position: relative; /* Keeps elements in place */
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+.header-container h1 {
+    margin: 0 auto; /* Ensures centering within the flex container */
+    text-align: center; /* Keeps alignment consistent */
+    flex: 1; /* Allows h1 to take up the available space */
+}
+
+.back-button {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Take the button out of normal flow */
+    right: 10px; /* Aligns the button to the top-right corner */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically centers the button in the row */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,59 @@
+/* Programmer ID: 87
+ This file contains styles for the patient manager php file */
+
+/* Success and Error Message Styles */
+.error-messages, .success-message {
+    margin: 20px 0; /* Space above and below the messages */
+    padding: 15px; /* Padding inside the box */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.1em; /* Slightly larger text */
+}
+
+/* Success Message */
+.success-message {
+    background-color: #d4edda; /* Light green background */
+    border: 1px solid #c3e6cb; /* Green border */
+    color: #155724; /* Dark green text */
+    display: flex;
+    align-items: center;
+}
+
+.success-message .success {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.success-message .success::before {
+    content: "✔"; /* Success checkmark icon */
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #28a745; /* Green color for the checkmark */
+}
+
+/* Error Messages */
+.error-messages {
+    background-color: #f8d7da; /* Light red background */
+    border: 1px solid #f5c6cb; /* Red border */
+    color: #721c24; /* Dark red text */
+    display: flex;
+    flex-direction: column; /* Makes the error messages stack vertically */
+}
+
+.error-messages .error {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.error-messages .error::before {
+    content: "✖"; /* Error cross icon */
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #dc3545; /* Red color for the error icon */
+}
+
+/* Headers for forms */
+.form-title {
+    text-align: left; /* Aligns the heading text to the left */
+    margin-top: 20px;       /* Adds space above the heading */
+    margin-bottom: 10px; /* Adds space below the heading for better readability */
+}
